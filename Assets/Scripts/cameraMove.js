@@ -2,9 +2,9 @@
 
 	var mousePosX : float = Input.mousePosition.x;
 	var mousePosY : float = Input.mousePosition.y;
-	var scrollDistanceShortX : int = 800;
+	var scrollDistanceShortX : int = 700;
 	var scrollDistanceShortY : int = 400;
-	var scrollDistanceLongX : int = 500;
+	var scrollDistanceLongX : int = 400;
 	var scrollDistanceLongY : int = 200;
 	var scrollSpeedShort : float = 20;
 	var scrollSpeedLong : float = 60;
@@ -13,6 +13,7 @@
 	if (mousePosX < scrollDistanceShortX && mousePosX > scrollDistanceLongX)
 	{
 		transform.Translate(Vector3.right * -scrollSpeedShort * Time.deltaTime);
+		
 	}else if (mousePosX < scrollDistanceLongX)
 	{
 		transform.Translate(Vector3.right * -scrollSpeedLong * Time.deltaTime);
