@@ -1,4 +1,6 @@
 ﻿var animator : Animator;
+var canPress : boolean = false;
+var explosionParticle : GameObject;
 
 function Start () {
 	animator = GetComponent("Animator");
@@ -12,22 +14,23 @@ function Update () {
 
 
 function FixedUpdate () {
-	if(Input.GetButtonDown("Fire1")){
+	if(Input.GetButtonDown("Fire1") && canPress){
 		var mousePos = Input.mousePosition;
-		var thePos : Vector3 = transform.position;      
+		var thePos : Vector3 = transform.position;
+		Instantiate(explosionParticle, transform.position, transform.rotation);  
 		//The distance from the camera to the player object
 		mousePos.z = (transform.position.z - Camera.main.transform.position.z); 	
 		var worldMousePosition = Camera.main.ScreenToWorldPoint (mousePos);
-		this.gameObject.rigidbody2D.AddForceAtPosition(transform.up * 100f, mousePos);
+		this.gameObject.rigidbody2D.AddForceAtPosition(transform.up * 3 * 200f, mousePos);
 	}
 }
 
 function OnMouseEnter() {
 	animator.SetBool("Mouse On", true);
-	//transform.renderer.material.color = Color.red;
+	canPress = true;
 }
 
 function OnMouseExit() {
 	animator.SetBool("Mouse On", false);
-	//transform.renderer.material.color = Color.black;
+	canPress = false;
 }
