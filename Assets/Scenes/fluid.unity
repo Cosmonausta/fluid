@@ -1868,6 +1868,50 @@ Prefab:
   m_RootGameObject: {fileID: 1006882270}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1001 &68061318
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+  m_RootGameObject: {fileID: 1226832869}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &78291527
 GameObject:
   m_ObjectHideFlags: 0
@@ -15321,6 +15365,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 3041590027
+<<<<<<< HEAD
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 09fa20908e98f134cab2d248f52db591, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15380,11 +15425,76 @@ TrailRenderer:
   m_Autodestruct: 0
 --- !u!114 &978086516
 MonoBehaviour:
+=======
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 09fa20908e98f134cab2d248f52db591, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &978086514
+Transform:
+>>>>>>> Fixed issues with color and transparency. Added particles on click(Triangles).
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11438776, guid: 25331c079ed0f6746bd4740b104af3d7,
     type: 2}
   m_PrefabInternal: {fileID: 1561638973}
   m_GameObject: {fileID: 978086508}
+<<<<<<< HEAD
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.2999992, y: 2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+--- !u!96 &978086515
+TrailRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9678422, guid: 25331c079ed0f6746bd4740b104af3d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1561638973}
+  m_GameObject: {fileID: 978086508}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: 1
+  m_StartWidth: .5
+  m_EndWidth: .100000001
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 4278190335
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 3292676863
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 1938985727
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 952945919
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
+--- !u!114 &978086516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11438776, guid: 25331c079ed0f6746bd4740b104af3d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1561638973}
+  m_GameObject: {fileID: 978086508}
+>>>>>>> Fixed issues with color and transparency. Added particles on click(Triangles).
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55e8f1c47e4420e4bb563da41214022a, type: 3}
@@ -16890,6 +17000,69 @@ TrailRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_SortingLayerID: 3041590027
+  m_SortingOrder: 0
+<<<<<<< HEAD
+  m_Sprite: {fileID: 21300000, guid: 09fa20908e98f134cab2d248f52db591, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1111545549
+Transform:
+=======
+  m_Time: 1
+  m_StartWidth: .5
+  m_EndWidth: .100000001
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 4278190335
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 3292676863
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 1938985727
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 952945919
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
+--- !u!114 &1111545551
+MonoBehaviour:
+>>>>>>> Fixed issues with color and transparency. Added particles on click(Triangles).
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11438776, guid: 25331c079ed0f6746bd4740b104af3d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 336206124}
+  m_GameObject: {fileID: 1111545543}
+<<<<<<< HEAD
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.7999992, y: -18.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 90
+--- !u!96 &1111545550
+TrailRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9678422, guid: 25331c079ed0f6746bd4740b104af3d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 336206124}
+  m_GameObject: {fileID: 1111545543}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Time: 1
@@ -16920,6 +17093,8 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 336206124}
   m_GameObject: {fileID: 1111545543}
+=======
+>>>>>>> Fixed issues with color and transparency. Added particles on click(Triangles).
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55e8f1c47e4420e4bb563da41214022a, type: 3}
@@ -17702,8 +17877,8 @@ MonoBehaviour:
 --- !u!1 &1226832869
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 168978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+  m_PrefabInternal: {fileID: 68061318}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1226832874}
@@ -17722,29 +17897,33 @@ GameObject:
 --- !u!81 &1226832870
 AudioListener:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 8168978, guid: 91a9b3ed93170174b8505a5aca93a863,
+    type: 2}
+  m_PrefabInternal: {fileID: 68061318}
   m_GameObject: {fileID: 1226832869}
   m_Enabled: 1
 --- !u!124 &1226832871
 Behaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 12468978, guid: 91a9b3ed93170174b8505a5aca93a863,
+    type: 2}
+  m_PrefabInternal: {fileID: 68061318}
   m_GameObject: {fileID: 1226832869}
   m_Enabled: 1
 --- !u!92 &1226832872
 Behaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 9268978, guid: 91a9b3ed93170174b8505a5aca93a863,
+    type: 2}
+  m_PrefabInternal: {fileID: 68061318}
   m_GameObject: {fileID: 1226832869}
   m_Enabled: 1
 --- !u!20 &1226832873
 Camera:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 2068978, guid: 91a9b3ed93170174b8505a5aca93a863,
+    type: 2}
+  m_PrefabInternal: {fileID: 68061318}
   m_GameObject: {fileID: 1226832869}
   m_Enabled: 1
   serializedVersion: 2
@@ -17775,8 +17954,8 @@ Camera:
 --- !u!4 &1226832874
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 468978, guid: 91a9b3ed93170174b8505a5aca93a863, type: 2}
+  m_PrefabInternal: {fileID: 68061318}
   m_GameObject: {fileID: 1226832869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
@@ -17787,8 +17966,9 @@ Transform:
 --- !u!114 &1226832875
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11468978, guid: 91a9b3ed93170174b8505a5aca93a863,
+    type: 2}
+  m_PrefabInternal: {fileID: 68061318}
   m_GameObject: {fileID: 1226832869}
   m_Enabled: 0
   m_EditorHideFlags: 0
